@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="profile-card">
+        <button class="edit-button" onclick="editProfile()">✏️</button>
+        <img src="22.jpg" alt="Profile Picture">
+        <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="uploadPhoto(event)">
+        <button id="upload-button" onclick="document.getElementById('file-input').click()">📸 Upload Photo</button>
+        <h2 id="name">John Doe</h2>
+        <p id="description">Web Developer | Tech Enthusiast | Problem Solver</p>
+        <div class="buttons">
+            <button>Profile</button>
+            <button>Answers</button>
+            <button>Posts</button>
+            <button>Activity</button>
+        </div>
+        <div class="credentials">
+            <span id="employment">📌 Add employment credential</span>
+            <span id="education">🎓 Add education credential</span>
+            <span id="location">📍 Add location credential</span>
+            <span id="joined">📅 Joined November 2020</span>
+            <button class="edit-credentials-button" onclick="editCredentials()">✏️ Edit Credentials</button>
+        </div>
+    </div>
+
+    <script>
+           function uploadPhoto(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = () => {
+                document.getElementById('profile-pic').src = reader.result;
+            };
+            if (file) reader.readAsDataURL(file);
+        }
+        function editProfile() {
+            const newName = prompt('Enter your new name:', document.getElementById('name').textContent);
+            const newDescription = prompt('Enter your new description:', document.getElementById('description').textContent);
+            if (newName) document.getElementById('name').textContent = newName;
+            if (newDescription) document.getElementById('description').textContent = newDescription;
+        }
+
+        function editCredentials() {
+            const newEmployment = prompt('Enter your employment credential:', document.getElementById('employment').textContent);
+            const newEducation = prompt('Enter your education credential:', document.getElementById('education').textContent);
+            const newLocation = prompt('Enter your location credential:', document.getElementById('location').textContent);
+            const newJoinDate = prompt('Enter your join date:', document.getElementById('joined').textContent);
+            
+            if (newEmployment) document.getElementById('employment').textContent = `📌 ${newEmployment}`;
+            if (newEducation) document.getElementById('education').textContent = `🎓 ${newEducation}`;
+            if (newLocation) document.getElementById('location').textContent = `📍 ${newLocation}`;
+            if (newJoinDate) document.getElementById('joined').textContent = `📅 ${newJoinDate}`;
+        }
+    </script>
+</body>
+</html>

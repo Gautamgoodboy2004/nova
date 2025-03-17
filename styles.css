@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    height: 900px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #1877f2;
+    font-size: 36px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.google { background: #db4437; }
+.google:hover { background: #c1351d; transform: scale(1.05); }
+
+.facebook { background: #4267B2; }
+.facebook:hover { background: #365899; transform: scale(1.05); }
+
+.linkedin { background: #0A66C2; }
+.linkedin:hover { background: #004182; transform: scale(1.05); }
+
+.login-btn { background: #1877f2; margin-top: 10px; padding: 10px; color: white; width: "100    %"; }
+.login-btn:hover { background: #165caa; transform: scale(1.05); }
+
+a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0a4d8c;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #1877f2;
+    outline: none;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Dark mode toggle styling */
+.dark-mode {
+    background-color: #181818;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: #ddd;
+}
+
+.dark-mode h1 {
+    color: #4caf50;
+}
+
+.dark-mode a {
+    color: #4caf50;
+}
+
+/* Dark mode button */
+#darkModeToggle {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #444;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#darkModeToggle:hover {
+    background: #555;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Expertise Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.expertise-container {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    height: 900px;
+    text-align: center;
+}
+
+h1 {
+    color: #3498db;
+}
+
+p {
+    color: #555;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.expertise-btn {
+    padding: 10px;
+    background-color: #a8c1f7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.expertise-btn.selected {
+    background-color: #408ce2;
+    color: #fff;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.continue-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+    background-color: #357abd;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-bar-fill {
+    width: 50%;
+    height: 100%;
+    background-color: #4a90e2;
+}
+/* profile_page style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.profile-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 900px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 5px; /* Space between image and border */
+    background-color: #fff; /* Inner gap color (optional) */
+    border: 3px solid #007bff; /* Blue border */
+}
+.profile-card h2 {
+    color: #007bff;
+    margin: 10px 0 5px;
+}
+.profile-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttons button:hover {
+    background-color: #0056b3;
+}
+.credentials {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+.credentials span {
+    display: block;
+    margin-bottom: 5px;
+}
+.edit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-button:hover {
+    background-color: #cc8400;
+    transform: scale(1.1);
+}
+.edit-credentials-button {
+    display: block;
+    margin: 10px auto;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.edit-credentials-button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+#upload-button {
+    margin-top: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#upload-button:hover {
+    background-color: #e64a19;
+}

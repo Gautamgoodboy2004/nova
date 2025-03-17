@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova - Expertise</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <div class="expertise-container">
+        <h1>Nova</h1>
+        <p>Let's know more about you!</p>
+
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+        <h2>One Last Step</h2>
+        <p>Select your areas of expertise and tell us about yourself</p>
+
+        <div class="expertise-grid">
+            <button class="expertise-btn">Technology</button>
+            <button class="expertise-btn">Movies</button>
+            <button class="expertise-btn">Health</button>
+            <button class="expertise-btn">Food</button>
+            <button class="expertise-btn selected">Science</button>
+            <button class="expertise-btn">Music</button>
+            <button class="expertise-btn">Books</button>
+            <button class="expertise-btn">Business</button>
+            <button class="expertise-btn">Psychology</button>
+            <button class="expertise-btn">History</button>
+            <button class="expertise-btn">Cooking</button>
+            <button class="expertise-btn">Sports</button>
+            <button class="expertise-btn">Fashion and Style</button>
+            <button class="expertise-btn">Design</button>
+            <button class="expertise-btn">Writing</button>
+            <button class="expertise-btn">Mathematics</button>
+            <button class="expertise-btn">Economics</button>
+            <button class="expertise-btn">Education</button>
+        </div>
+
+        <textarea placeholder="Tell us more about your profession and expertise..."></textarea>
+        <button class="continue-btn">Continue</button>
+    </div>
+
+    <script>
+        const expertiseButtons = document.querySelectorAll('.expertise-btn');
+        expertiseButtons.forEach(button => {
+            button.addEventListener('click', () => button.classList.toggle('selected'));
+        });
+
+        document.querySelector('.continue-btn').addEventListener('click', () => {
+            alert('few want clear ur quore (clik on ok)!');
+            window.location.href = 'profile_page.html';
+        });
+    </script>
+</body>
+</html>
